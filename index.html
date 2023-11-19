@@ -28,7 +28,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main>
+		<div id="content"></div>
 			<div class="container">
 				<div class="top">
 					<div class="logo">
@@ -44,7 +44,7 @@
 							<input
 								type="text"
 								placeholder="https://www.exampleurl.com/"
-								id="inputField"
+								id="inputUrl"
 							/>
 						</div>
 
@@ -61,17 +61,20 @@
 					<h4>Shortened URL!</h4>
 					<div class="url-area">
 						<div class="left">
-							<input type="text" readonly id="shortUrl" placeholder="shorted">
+							<input type="text"  id="shortUrl" placeholder="https://tinyurl.com/ywotojgh">
 						</div>
 						<div class="right">
-							<i class="fa-regular fa-clipboard"></i>
-							<i
-								class="fa-solid fa-arrow-up-right-from-square"
+							<i class="fa-regular fa-clipboard"  id="clipBoard"></i>
+							<a href="#" id="goSource" >
+								<i
+								class="fa-solid fa-arrow-up-right-from-square" id="goLink"
 							></i>
+						</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		
 		<script src="app.js"></script>
 	</body>
