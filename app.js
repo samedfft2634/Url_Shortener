@@ -17,6 +17,7 @@ const getData = async () => {
 		const data = await response.text();
 		shortUrl.value = data;
 	} else {
+		inputUrl.value = ""
 		content.innerHTML = `<h1 style="text-align:center; color: #fff">Invalid URL ‼</h1>`;
 		const body = document.querySelector("body");
 		body.style.flexDirection = "column";

@@ -132,3 +132,21 @@ body {
     outline: none;
     transition: .5s all;
 }
+
+@media screen and (max-width:500px){
+    .top{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 1rem;
+    }
+    .logo img {
+        width: 5rem;
+    }
+    .btn {
+        padding: .5rem;
+    }
+    .buttons{
+        justify-content: space-between; 
+    }
+}
